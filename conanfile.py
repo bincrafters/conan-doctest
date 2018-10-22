@@ -7,7 +7,7 @@ import os
 
 class DoctestConan(ConanFile):
     name = "doctest"
-    version = "1.2.6"
+    version = "2.0.0"
     url = "https://github.com/bincrafters/conan-doctest"
     description = "C++98/C++11 single header testing framework"
     license = "MIT"
