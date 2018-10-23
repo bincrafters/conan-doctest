@@ -23,7 +23,7 @@ class DoctestConan(ConanFile):
 
     def package(self):
         self.copy(pattern="LICENSE.txt", dst="licenses", src=self._source_subfolder)
-        self.copy(pattern="*doctest.h*", dst="include", src=os.path.join(self._source_subfolder,"doctest"))
+        self.copy(pattern="*doctest.h*", dst="include", src=os.path.join(self._source_subfolder, "doctest"))
 
     def package_id(self):
         self.info.header_only()
