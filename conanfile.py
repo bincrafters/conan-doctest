@@ -11,7 +11,7 @@ class DoctestConan(ConanFile):
     url = "https://github.com/bincrafters/conan-doctest"
     homepage = "https://github.com/onqtam/doctest"
     author = "Bincrafters <bincrafters@gmail.com>"
-    description = "C++98/C++11 single header testing framework"
+    description = "C++11/14/17/20 single header testing framework"
     license = "MIT"
     exports = ["LICENSE.md"]
     _source_subfolder = "source_subfolder"
