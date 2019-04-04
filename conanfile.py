@@ -7,11 +7,12 @@ import os
 
 class DoctestConan(ConanFile):
     name = "doctest"
-    version = "2.2.0"
+    version = "2.3.1"
     url = "https://github.com/bincrafters/conan-doctest"
     homepage = "https://github.com/onqtam/doctest"
     author = "Bincrafters <bincrafters@gmail.com>"
     description = "C++11/14/17/20 single header testing framework"
+    topics = ("conan", "doctest", "tdd", "testing", "testing-framework")
     license = "MIT"
     exports = ["LICENSE.md"]
     no_copy_source = True
@@ -19,7 +20,8 @@ class DoctestConan(ConanFile):
     _build_subfolder = "build_subfolder"
     
     def source(self):
-        tools.get("{0}/archive/{1}.tar.gz".format(self.homepage, self.version))
+        sha256 = "b3d3c6133874e3a8c8e319cab33167156b6b1d2ed1ddde08c2655193cdeb58a0"
+        tools.get("{0}/archive/{1}.tar.gz".format(self.homepage, self.version), sha256=sha256)
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self._source_subfolder)
 
