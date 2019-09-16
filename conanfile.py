@@ -7,7 +7,7 @@ import os
 
 class DoctestConan(ConanFile):
     name = "doctest"
-    version = "2.3.1"
+    version = "2.3.4"
     url = "https://github.com/bincrafters/conan-doctest"
     homepage = "https://github.com/onqtam/doctest"
     author = "Bincrafters <bincrafters@gmail.com>"
@@ -18,9 +18,9 @@ class DoctestConan(ConanFile):
     no_copy_source = True
     _source_subfolder = "source_subfolder"
     _build_subfolder = "build_subfolder"
-    
+
     def source(self):
-        sha256 = "b3d3c6133874e3a8c8e319cab33167156b6b1d2ed1ddde08c2655193cdeb58a0"
+        sha256 = "d5d9c5b6d2c8737acd64823805d3419c7d49cd4e809fa92c326280367bb694b2"
         tools.get("{0}/archive/{1}.tar.gz".format(self.homepage, self.version), sha256=sha256)
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self._source_subfolder)
