@@ -7,7 +7,6 @@ class DoctestConan(ConanFile):
     version = "2.3.4"
     url = "https://github.com/bincrafters/conan-doctest"
     homepage = "https://github.com/onqtam/doctest"
-    author = "Bincrafters <bincrafters@gmail.com>"
     description = "C++11/14/17/20 single header testing framework"
     topics = ("conan", "doctest", "tdd", "testing", "testing-framework")
     license = "MIT"
